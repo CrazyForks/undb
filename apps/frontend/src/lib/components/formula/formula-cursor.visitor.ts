@@ -25,7 +25,7 @@ export class FormulaCursorVisitor extends FormulaParserVisitor<void> {
     this.targetPosition = position
   }
 
-  public hasAggumentList(): boolean {
+  public hasArgumentList(): boolean {
     return this.pathNodes.some((node) => node instanceof ArgumentListContext)
   }
 
